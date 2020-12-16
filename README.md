@@ -15,8 +15,9 @@ Lets start with a simple feature to feature comparison
 
 |Azure Pipelines |Notes| Github Actions |Notes	| Link to roadmap|
 |-|-|-|-|-|
-Variables|Setting environment variables for scripts	|[Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables) 
+Variables|Setting environment variables for scripts	|[Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables)| Variables are defined in the script
 Variables|Variables in expressions	|[Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables)|Use $Variable or ${{env.variable}} syntax
+Set Variables at trigger time||[Worflow_Dispatch](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#workflow_dispatch)|Workflow dispatch allows for inputs that allows you to take values when w workflow is triggered
 [System Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)||[Default Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables#default-environment-variables)| Totally different naming for variables.
 [Secret variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables)||[Encrypted secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets)
 Agents||Runners|Its the same agent being used by both Azure Devops and Git Hub Actions
@@ -32,6 +33,7 @@ Environments||[Environments beta](https://docs.github.com/en/free-pro-team@lates
 [Set variable at runtime](https://docs.microsoft.com/en-us/azure/devops/pipelines/scripts/logging-commands?view=azure-devops&tabs=powershell#overview)||[Workflow commands](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-commands-for-github-actions#about-workflow-commands)|use ::set-env|
 Fine grained repo controls||roadmap||[Role-based Access Control (RBAC) - Custom Roles with fine-grained repo permissions · Issue #111](https://github.com/github/roadmap/issues/111)
 Auto merge PRs|Be able to auto merge a PR once checks have passed|roadmap|||[Automerge Pull Requests · Issue #107](https://github.com/github/roadmap/issues/107)
+Pipeline templates||[Composite run steps action](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/creating-a-composite-run-steps-action)|[Using actions in the same repository](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/finding-and-customizing-actions#referencing-an-action-in-the-same-repository-where-a-workflow-file-uses-the-action)|
 Pipeline templates||[Sharing Workflows](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/sharing-workflows-with-your-organization)||[Actions: Centrally managed workflow templates · Issue #98](https://github.com/github/roadmap/issues/98)<br>
 Template control|Be able to inject template and enforce policy	roadmap	|||	[Actions: Organization and enterprise workflows · Issue #52](https://github.com/github/roadmap/issues/52)
 TaskGroup		||Custom Action|	???	
