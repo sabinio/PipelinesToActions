@@ -17,9 +17,10 @@ Lets start with a simple feature to feature comparison
 |-|-|-|-|-|
 Variables|Setting environment variables for scripts	|[Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables) 
 Variables|Variables in expressions	|[Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables)|Use $Variable or ${{env.variable}} syntax
-[System Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)||[Default Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables#default-environment-variables)
+[System Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)||[Default Environment Variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables#default-environment-variables)| Totally different naming for variables.
 [Secret variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables)||[Encrypted secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets)
-Agents||Runners		
+Agents||Runners|Its the same agent being used by both Azure Devops and Git Hub Actions
+[Scaling build agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)||roadmap|[Actions: Multiple hosted runner sizes, custom networking, and custom images · Issue #95](https://github.com/github/roadmap/issues/95)
 Deployment Groups||[Runners with labels](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/using-self-hosted-runners-in-a-workflow_)|Target based on matching ALL labels	Using self-hosted runners in a workflow - GitHub Docs
 Environments||[Environments beta](https://docs.github.com/en/free-pro-team@latest/actions/reference/environments#about-environments)| Can only be used for public repos<br>Does allow assigning resources to the environment	
 [Expressions](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)||[Context and Expressions](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions)|Looks slightly nicer than azure devops, access to richer context objects|
@@ -33,7 +34,6 @@ Fine grained repo controls||roadmap||[Role-based Access Control (RBAC) - Custom 
 Auto merge PRs|Be able to auto merge a PR once checks have passed|roadmap|||[Automerge Pull Requests · Issue #107](https://github.com/github/roadmap/issues/107)
 Pipeline templates||[Sharing Workflows](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/sharing-workflows-with-your-organization)||[Actions: Centrally managed workflow templates · Issue #98](https://github.com/github/roadmap/issues/98)<br>
 Template control|Be able to inject template and enforce policy	roadmap	|||	[Actions: Organization and enterprise workflows · Issue #52](https://github.com/github/roadmap/issues/52)
-[Scaling build agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)||roadmap|[Actions: Multiple hosted runner sizes, custom networking, and custom images · Issue #95](https://github.com/github/roadmap/issues/95)
 TaskGroup		||Custom Action|	???	
 VariableGroup|||Variables have to be defined as secrets or in the yml			
 
