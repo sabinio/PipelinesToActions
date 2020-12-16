@@ -38,6 +38,6 @@ Pipeline templates||[Sharing Workflows](https://docs.github.com/en/free-pro-team
 Template control|Be able to inject template and enforce policy	roadmap	|||	[Actions: Organization and enterprise workflows · Issue #52](https://github.com/github/roadmap/issues/52)
 TaskGroup		||Custom Action|	???	
 VariableGroup|||Variables have to be defined as secrets or in the yml			
-
+[Test results](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops)| Azure devops has rich testing analytics|none|
 
 
